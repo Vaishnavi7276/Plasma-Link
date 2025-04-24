@@ -1,0 +1,123 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color :black;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding:8px 18px;  
+}
+
+.logo img{
+    height :45px;
+    width : auto;
+}
+
+nav .left{
+    display:flex;
+    align-items:center;
+}
+
+.topic{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.btn{
+    color:white;
+    height:40px;
+    width: 95px;
+    border: none;
+    background-color: rgb(78, 131, 173);
+    cursor:pointer;  
+}
+
+.btn:hover{
+    border: 1.9px solid rgb(78, 131, 173);
+    background-color: white;
+    color:black;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    color: rgb(3, 3, 51);
+    cursor:pointer;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 35px;   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(3, 3, 51);
+}
+
+nav ul li:hover a {
+    color: rgb(83, 152, 207);
+    font-size:1.04rem;
+}
+
+.title{
+    font-size: 40px;
+}
+
+.para{  
+    font-size: 18px;
+    color:rgb(97, 100, 104);
+}
+.container2{
+    justify-content: space-around;
+    height:auto;
+    width : 100%; 
+    background-color: rgb(229, 231,231);
+}
+
+#images img{
+    height:45%;
+    width:49%;
+}
+
+.container4{
+    height:auto;
+    width : 100%; 
+    background-color: rgb(229, 231,231);
+}
+
+.food-images{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.food img{
+    height:170px;
+    width:270px;
+}
+
+.food-images h3{
+    padding:15px 0;
+    font-size: x-large;
+    color:rgb(65, 116, 158);
+}
+
+.animated {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.7s ease, transform 2s ease;
+}
+.animated.active {
+    opacity: 1;
+    transform: translateY(0);
+}

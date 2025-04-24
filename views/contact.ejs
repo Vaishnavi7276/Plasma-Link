@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlasmaLink</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div class="left">
+              <div class="logo">
+                  <img src="./img/Plasma Link Logo.png">
+              </div>
+          </div>
+          <div class="right">
+              <ul>
+                  <li><a href="/">Home</a></li>
+                  <!-- <li><a href="/login">User</a></li> -->
+                  <li><a href="/Hlogin">Hospital</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                  <li>
+                      <form action="/donation_request" method="Post">
+                          <button class="btn">Donate</button>
+                      </form>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Connecting You to Cutting-Edge Plasma Technology
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>Plasma Link</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>plasmalinkweb@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>+91 9764656978</p>
+            </div>
+          </div>
+
+          <!-- <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form autocomplete="off" action="/contactSave" method="post">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" placeholder="Name" class="input" />
+              <label for=""></label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" placeholder="Email" class="input" />
+              <label for=""></label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" placeholder="Phone" class="input" />
+              <label for=""></label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" placeholder="Message" class="input"></textarea>
+              <label for=""></label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/public/javascript/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>PlasmaLink</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="./css/register.css">
+	</head>
+
+	<body>
+        <header>
+            <nav>
+                <div class="left">
+                    <div class="logo">
+                        <img src="/img/Plasma Link Logo.png">
+                    </div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/login">User</a></li>
+                        <li><a href="/Hlogin">Hospital</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="wrapper" style="background-image: url('/img/bg1.png');">
+			<div class="inner">
+				<form action="/userRegister" method="POST">
+					<h3>Registration Form</h3>
+					<div class="form-group">
+						<input type="text" placeholder="First Name" class="form-control" name="firstname">
+						<input type="text" placeholder="Last Name" class="form-control" name="lastname">
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Username" class="form-control" name="username">
+						<i class="zmdi zmdi-account"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Email Address" class="form-control" name="email">
+						<i class="zmdi zmdi-email"></i>
+					</div>
+					<!--<div class="form-wrapper">
+						<select name="gender" id="" class="form-control">
+							<option value="" disabled selected>Gender</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div> -->
+					<!--<div class="form-wrapper">
+						<select name="bloodtype" id="" class="form-control">
+							<option value="" disabled selected>Blood Type</option>
+							<option value="A+">A+</option>
+							<option value="B+">B+</option>
+							<option value="AB+">AB+</option>
+						    <option value="O+">O+</option>
+							<option value="A-">A-</option>
+							<option value="B-">B-</option>
+							<option value="AB-">AB-</option>
+							<option value="O-">O-</option>
+						</select>
+                        <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>-->
+					<div class="form-wrapper">
+						<input type="password" placeholder="Password" class="form-control" name="password">
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="password" placeholder="Confirm Password" class="form-control" name="repassword">
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+                    <div class="form-wrapper">
+                        <center><a href="/login">Already a member? Login</a></center>
+                    </div>
+					<button>Register
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>
